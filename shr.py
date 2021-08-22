@@ -70,6 +70,7 @@ class shifApp(App):
                     file=open("зашифровано.txt","a")
                     file.write(alfawsh[br])
                     file.close()
+                    break
                 br+=1
             bz+=1
         file=open("зашифровано.txt","r")
@@ -104,7 +105,8 @@ class shifApp(App):
                 hj+=1
             for i in range(0,kwo):
                 if yz==alfawsh[i]:
-                    pahz+=alfaw[i]    
+                    pahz+=alfaw[i]
+                    break
             yz=""
         file=open("раскодировано.txt","w")
         file.write(pahz)
