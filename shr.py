@@ -9,7 +9,7 @@ from kivy.uix.switch import Switch
 import threading
 import os
 import random
-class shifApp(App):
+class ShifApp(App):
     def callback(self,instance, value):
         if self.ghi==0:
             self.ghi=1
@@ -131,4 +131,4 @@ class shifApp(App):
         bl.add_widget(self.tp)
         return bl
 if __name__=="__main__":
-    shifApp().run()
+    ShifApp().run()
